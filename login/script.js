@@ -1,10 +1,18 @@
 const form = document.querySelector("form")
+
 form.addEventListener("submit",(event)=>{
     event.preventDefault()
-
-    console.log("submit",event)
+    
     const email = document.querySelector("#email").value
     const password = document.querySelector("#password").value
-    console.log(email)
-    console.log(password)
+    
+    console.log(password,"password")
+    if(email != "" && password != ""){
+       //alert("login efetuado com sucesso!")
+        window.location.href = "/"
+    }else{
+        alert("login inválido")
+    }
 })
+
+
