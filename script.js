@@ -1,6 +1,6 @@
 function getUser(){
     const email = document.querySelector("#email")
-    console.log(email,"email")
-    email.innerText = "anderson"
+    const emailLocal = localStorage.getItem("user")
+    email.innerText = emailLocal
 }
 getUser()
