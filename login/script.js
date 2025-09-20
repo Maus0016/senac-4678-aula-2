@@ -10,6 +10,7 @@ form.addEventListener("submit",(event)=>{
     if(email != "" && password != ""){
        //alert("login efetuado com sucesso!")
         localStorage.setItem("user",email)
+        
         window.location.href = "/"
     }else{
         alert("login inválido")
